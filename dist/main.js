@@ -18,13 +18,13 @@ if (chessboard) {
             }
             if (j == 0) {
                 const coord = document.createElement("p");
-                coord.innerHTML = alph[(alph.length - 1) - i];
+                coord.innerHTML = `${size - i}`;
                 coord.classList.add("leftColumnP");
                 square.appendChild(coord);
             }
             if (i == size - 1) {
                 const coord = document.createElement("p");
-                coord.innerHTML = `${j + 1}`;
+                coord.innerHTML = alph[j];
                 coord.classList.add("bottomRowP");
                 square.appendChild(coord);
             }

@@ -1,0 +1,1 @@
+// npx tsc src/main.ts --outDir dist --watch 

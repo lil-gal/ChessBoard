@@ -1,21 +1,40 @@
-<script src="dist/main.js"></script> 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
     <body>
-        <div class="className">
-            helol
+        <div id="chessBoard">
+            
+            
         </div>
     
+        
+
+
+        <script src="dist/main.js"></script> 
     </body>
 </html>
 
 
 <style src="style.css">
-    @import "style.css"
+    @import url("style.css");
+    .black {
+        background-color: black;
+    }
+    .white {
+        background-color: orange;
+    }
+
+    #chessBoard {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+
+        width: 500px;
+        height: 500px;
+    }
 </style>
